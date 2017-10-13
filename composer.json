@@ -1,0 +1,59 @@
+{
+    "name": "lachezargrigorov/laravel-closures-container",
+    "type": "library",
+    "description": "Easy to use closures container for Laravel. First register the closure then use it anywhere.",
+    "keywords": [
+        "closures",
+        "closures container",
+        "laravel"
+    ],
+    "homepage": "https://github.com/lachezargrigorov/laravel-closures-container",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lachezar Grigorov",
+            "email": "lachezar@grigorov.website",
+            "homepage": "http://grigorov.website",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.1",
+        "php" : ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.0"
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Lachezargrigorov\\ClosuresContainer\\Test\\": "tests"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Lachezargrigorov\\ClosuresContainer\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LachezarGrigorov\\ClosuresContainer\\ClosuresContainerServiceProvider"
+            ],
+            "aliases": {
+                "ClosuresContainer": "LachezarGrigorov\\ClosuresContainer\\Facades\\Facade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
+
+
