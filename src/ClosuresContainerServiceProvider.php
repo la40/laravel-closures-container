@@ -22,7 +22,7 @@ class ClosuresContainerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('ClosuresContainer',function($app)
+        $this->app->singleton('closures',function($app)
         {
             return ClosuresContainer::getInstance();
         });

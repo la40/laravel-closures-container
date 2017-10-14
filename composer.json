@@ -47,7 +47,7 @@
                 "LachezarGrigorov\\ClosuresContainer\\ClosuresContainerServiceProvider"
             ],
             "aliases": {
-                "ClosuresContainer": "LachezarGrigorov\\ClosuresContainer\\Facades\\Facade"
+                "Closures": "LachezarGrigorov\\ClosuresContainer\\Facades\\Facade"
             }
         }
     },

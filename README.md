@@ -5,6 +5,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/lachezargrigorov/laravel-closures-container/master.svg)](https://travis-ci.org/lachezargrigorov/laravel-closures-container)
 [![Total Downloads](https://poser.pugx.org/lachezargrigorov/laravel-closures-container/downloads)](https://packagist.org/packages/lachezargrigorov/laravel-closures-container)
+
 Easy to use closures container. First register the closure then use it anywhere.
 
 ## Install
@@ -45,7 +46,7 @@ $bool = Closures::isRegistered("sumTwoNumbers");
 
 //using IOC
 
-$closures = app("Closures");
+$closures = app("closures");
 
 $closures->register("sumTwoNumbers",function($a,$b)
 {
